@@ -16,7 +16,7 @@ public class Runner {
         //testing commits
 
         // 2. Calculate the rectangle's area and store it in a variable
-        int area = rectangle.area;
+        int area = rectangle.calculateArea();
         System.out.println("The rectangle has an area of " + area);
 
         // 3. Check if your rectangle is actually a square

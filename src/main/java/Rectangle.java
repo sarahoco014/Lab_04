@@ -1,20 +1,20 @@
 public class Rectangle {
 
-    int length;
-    int width;
-    int area;
+    private int length;
+    private int width;
+//    private int area;
 
     public Rectangle(int length, int width) {
         this.length = length;
         this.width = width;
-        this.area = length * width;
+//        this.area = length * width;
     }
 
-    int calculateArea() {
+    public int calculateArea() {
         return length * width;
     }
 
-    boolean isSquare() {
+    public boolean isSquare() {
         return length == width;
     }
 }
