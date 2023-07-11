@@ -11,17 +11,17 @@ public class Runner {
         System.out.println("Running rectangle tasks...");
 
         // 1. Create a new rectangle object
-//        Rectangle rectangle = <INSTANTIATE A NEW RECTANGLE OBJECT HERE>
+        Rectangle rectangle = new Rectangle(2,2);
 
         //testing commits
 
         // 2. Calculate the rectangle's area and store it in a variable
-//        int area = <CALL YOUR METHOD HERE>;
-//        System.out.println("The rectangle has an area of " + area);
+        int area = rectangle.area;
+        System.out.println("The rectangle has an area of " + area);
 
         // 3. Check if your rectangle is actually a square
-//        boolean isRectangle = <CALL YOUR METHOD HERE>
-//        System.out.println("Object is a square (true/false): " + isRectangle);
+        boolean isRectangle = rectangle.isSquare();
+        System.out.println("Object is a square (true/false): " + isRectangle);
     }
 
     public static void computerDemo(){
