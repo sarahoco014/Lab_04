@@ -51,7 +51,10 @@ public class Runner {
 
         // 5. Write a method to print a message.
         // To test this works *without* a printer too you can comment out the code for question 4
+
         computer.printMessage("Hello World!");
+
+
     }
 
     public static void shoppingTrolleyDemo(){
@@ -59,18 +62,19 @@ public class Runner {
         System.out.println("Running shopping trolley tasks...");
 
         // 1. Create a new shopping trolley
-//        ShoppingTrolley trolley = <INSTANTIATE A NEW SHOPPINGTROLLEY OBJECT HERE>;
+        ShoppingTrolley trolley = new ShoppingTrolley();
 
         // 2. Add an item to the trolley
-//        <CALL YOUR METHOD HERE>;
+        trolley.addItem("milk");
 
         // 3. Count items in the trolley
-//        int itemCount = <CALL YOUR METHOD HERE>;
-//        System.out.println("The trolley contains " + itemCount + " items.");
+        int itemCount = trolley.countItems();
+        System.out.println("The trolley contains " + itemCount + " items.");
 
         // 4. Check if an item is in the trolley
-//        boolean itemInTrolley = <CALL YOUR METHOD HERE>;
-//        System.out.println("Object is a square (true/false): " + itemInTrolley);
+        String item = "milk";
+        boolean itemInTrolley = trolley.checkItem(item);
+        System.out.println("Is " + item + " in trolley? " + itemInTrolley);
     }
 
 

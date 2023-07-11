@@ -5,9 +5,12 @@ public class Computer {
 
     String message;
 
+    boolean isPrinterConnected;
+
     public Computer(int storage, String printerModel) {
         this.storage = storage;
         this.printerModel = printerModel;
+        this.isPrinterConnected = true;
     }
 
     int getStorage() {
@@ -29,8 +32,10 @@ public class Computer {
     // put getters and setters together
 
     void printMessage(String message) {
-        System.out.println("Printing...");
-        System.out.println("The printed message is: " + message);
+        if(isPrinterConnected) {
+            System.out.println("Printing message ...");
+            System.out.println("The printing message is: " + message);
+        }
     }
 }
 
